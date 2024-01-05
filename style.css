@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(214, 226, 240);
+  font-family: Outfit sans-serif;
+  display: flex;
+  height: 100svh;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: 70%;
+  width: 20%;
+  padding: 10px;
+  gap: 15px;
+  box-shadow: rgb(14, 75, 167, 0.2) 2px 2px 10px 2px;
+}
+
+img {
+  height: 60%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.lettering-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  gap: 15px;
+}
+
+.lettering-div p {
+  text-align: center;
+  color: rgb(0, 0, 0, 0.8);
+}
+
+.lettering-div h2 {
+  text-align: center;
+  font-size: 20px;
+  color: rgb(0, 0, 0, 0.9);
+}
+
+@media (max-width: 1197px) {
+  .lettering-div h2 {
+    font-size: 18px;
+  }
+  .lettering-div p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1088px) {
+  .lettering-div h2 {
+    font-size: 15px;
+  }
+  .lettering-div p {
+    font-size: 12px;
+  }
+
+  .main {
+    height: 60%;
+  }
+}
+
+@media (max-width: 922px) {
+  .lettering-div {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 874px) {
+  .lettering-div h2 {
+    font-size: 13px;
+  }
+  .main {
+    width: 30%;
+  }
+}
+
+@media (max-width: 546px) {
+  .main {
+    width: 35%;
+  }
+}
+
+@media (max-width: 468px) {
+  .main {
+    width: 55%;
+  }
+  .lettering-div h2 {
+    font-size: 16px;
+  }
+}
